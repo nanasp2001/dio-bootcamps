@@ -1,18 +1,27 @@
-## Getting Started
+# Controle de Banho de Petshop
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Exercício de Java (abstração, classes e encapsulamento) com o controle de uma máquina de banho para pets.
 
-## Folder Structure
+## Operações da máquina
+* Dar banho no pet
+* Abastecer com água
+* Abastecer com shampoo
+* Verificar nível de água
+* Verificar nível de shampoo
+* Verificar se tem pet no banho
+* Colocar pet na máquina
+* Retirar pet da máquina
+* Limpar máquina
 
-The workspace contains two folders by default, where:
+## Regras de implementação
+* A máquina de banho deve permitir somente 1 pet por vez.
+* Cada banho realizado irá consumir 10 litros de água e 2 litros de shampoo.
+* A máquina tem capacidade máxima de 30 litros de água e 10 litros de shampoo.
+* Se o pet for retirado da máquina sem estar limpo, será necessário limpar a máquina para permitir a entrada de outro pet.
+* A limpeza da máquina irá consumir 3 litros de água e 1 litro de shampoo.
+* O abastecimento de água e shampoo deve permitir 2 litros por vez que for acionado.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## Estrutura do projeto
+* `src/Pet.java`: representa o pet (`nome` e estado `limpo`).
+* `src/PetMachine.java`: controla os níveis de água e shampoo, o pet atual na máquina, o estado de limpeza e as regras das operações.
+* `src/Main.java`: executa o menu interativo no terminal para testar as opções.
