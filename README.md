@@ -5,6 +5,8 @@ Repositório com exercícios, desafios e projetos práticos realizados nos bootc
 ## Bootcamps
 * **Itaú - Java com Inteligência Artificial** (`itau-java-ia/`)
   * `petshop-banho` — Controle de banho de petshop (abstração, classes e encapsulamento em Java)
+  * `relogio` — Projeto de relógio em Java - formatação de horário (Herança e Polimorfismo em Java)
+
 
 ## Estrutura do repositório
 
@@ -13,3 +15,4 @@ dio-bootcamps/
 ├── README.md
 └── itau-java-ia/
     └── petshop-banho/
+    └── relogio/
